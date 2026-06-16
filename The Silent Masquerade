@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unspoken: Poems of Love and Memory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="paper">
+    
+        <h1 class="site-title">Unspoken: Poems of Love and Memory</h1>
+         <img src="feather.svg" class="image1" alt="feather-ink" >
+        <h5 class="intro-stone"> The Silent Masquerade </h5>
+            
+    <img src="maskspng.png"
+     alt="Masquerade"
+     width="300"
+     class="poem-image">
+            
+        </strong></p>
+
+        </div>
+        <div class="poem">
+    <p>
+       We are more enigmatic than one can imagine,<br>
+    </p>
+
+       <p> Though we have eyes, ears, and noses,<br>
+           we fail to notice what truly matters.
+        </p>
+
+
+  <p> Frauds are committed,<br>
+     murders unfold,<br>
+    no one is safe from lust and harm.
+</p>
+
+     <p>Justice, too often, feels counterfeit,<br>
+       and trust begins to lose its charm.
+</p>
+
+        
+    <p>When will we wake to the truth.
+    </p>
+
+<p> that under the weight of power,<br>
+a human life can feel like dust in the wind.</p>
+
+<p>seen, but not valued,<br>
+heard, but not answered.</p>
+
+<p>And justice, once bright,
+now trembles in the dark.</p>
+
+
+<img src="divider1.svg" class="divider" alt="decorative divider" width="300" align="center"> <br>
+
+<a href="index.html" class="home-link" align="center">← Home</a>
+        
+    </p>
+</div>
+</body>
+</html>
