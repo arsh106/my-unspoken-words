@@ -72,7 +72,16 @@ body {
     border-bottom: 1px solid #c9bba7;
     transition: 0.3s ease;
 }
+.photo-container {
+    text-align: center;
+}
 
+.photo-container figcaption {
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
 .home-link:hover {
     transform: translateX(-5px);
     color: #000;
