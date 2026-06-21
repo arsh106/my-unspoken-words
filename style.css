@@ -194,30 +194,16 @@ body {
 /* Credit Text */
 .credit-text {
     text-align: center;
-    font-size: 12px;
-    color: #8b7a6a;
-    font-style: italic;
-    letter-spacing: 0.5px;
-    margin: 5px 0 0 0;
-    opacity: 0.8;
+    font-size: 10.5px;
+    color: rgba(120, 110, 100, 0.55);
     font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    letter-spacing: 1.2px;
+    margin: 6px 0 0 0;
 }
 
-.credit-text:hover {
-    opacity: 1;
-}
 
-.credit-text a {
-    color: #5a4f45;
-    text-decoration: none;
-    border-bottom: 1px dotted #c9bba7;
-    transition: color 0.3s ease, border-color 0.3s ease;
-}
 
-.credit-text a:hover {
-    color: #2f2a27;
-    border-bottom-color: #8b7a6a;
-}
 
 /* ===== PHOTO ===== */
 .photo-container {
@@ -379,7 +365,7 @@ body {
 
 /* Fix for visited links (prevents purple color) */
 .poem-link:visited {
-    color: #3a2f2a !important;
+    color: #3a2f2a ;
 }
 
 /* Fix for any other blue links on the page */
@@ -500,14 +486,5 @@ a:visited {
 
     .credit-text {
         font-size: 10px;
-    }
-
-    .music-container {
-        padding: 6px 10px;
-        max-width: 100%;
-    }
-
-    .music-container audio {
-        height: 28px;
     }
 }
