@@ -275,3 +275,175 @@ body {
         height: 28px;
     }
 }
+
+/* ==========================================
+   MOBILE FIXES - Poem List
+   ========================================== */
+
+/* Poem list container */
+.poem-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.poem-list li {
+    margin-bottom: 12px;
+}
+
+/* Poem links - Remove blue color and style properly */
+.poem-link {
+    display: block;
+    padding: 14px 18px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #3a2f2a !important;  /* Force dark color, not blue */
+    background: rgba(255, 250, 240, 0.5);
+    border-radius: 8px;
+    border: 1px solid rgba(201, 187, 167, 0.3);
+    transition: all 0.3s ease;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+}
+
+.poem-link:hover {
+    transform: translateX(5px);
+    color: #000 !important;
+    background: rgba(255, 250, 240, 0.9);
+    border-color: #8b7a6a;
+}
+
+/* Fix for visited links (prevents purple color) */
+.poem-link:visited {
+    color: #3a2f2a !important;
+}
+
+/* Fix for any other blue links on the page */
+a {
+    color: #3a2f2a;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3a2f2a;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE - Poem List
+   ========================================== */
+
+@media (max-width: 768px) {
+    .paper {
+        padding: 20px 15px;
+        margin: 10px;
+    }
+
+    /* Poem list on mobile - stacked properly */
+    .poem-list {
+        margin: 15px 0;
+    }
+
+    .poem-list li {
+        margin-bottom: 10px;
+    }
+
+    .poem-link {
+        padding: 12px 14px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    /* Site title smaller */
+    .site-title {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    /* Intro text smaller */
+    .intro-stone {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    /* Poem text smaller */
+    .poem {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+
+    .poem p {
+        margin-bottom: 14px;
+    }
+
+    /* Images responsive */
+    .image1 {
+        max-width: 70px;
+    }
+
+    .divider {
+        max-width: 200px;
+    }
+
+    .poem-image {
+        width: 100% !important;
+        max-width: 250px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .paper {
+        padding: 15px 10px;
+        margin: 5px;
+        border-radius: 4px;
+    }
+
+    .site-title {
+        font-size: 22px;
+        letter-spacing: 0.05em;
+        margin-top: 15px;
+    }
+
+    .intro-stone {
+        font-size: 17px;
+    }
+
+    .poem-link {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .poem {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .poem p {
+        margin-bottom: 12px;
+    }
+
+    .image1 {
+        max-width: 50px;
+    }
+
+    .divider {
+        max-width: 150px;
+    }
+
+    .home-link {
+        font-size: 15px;
+    }
+
+    .credit-text {
+        font-size: 10px;
+    }
+
+    .music-container {
+        padding: 6px 10px;
+        max-width: 100%;
+    }
+
+    .music-container audio {
+        height: 28px;
+    }
+}
