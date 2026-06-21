@@ -1,169 +1,100 @@
+/* ===== BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #e9dfc8;
+    font-family: "Cormorant Garamond", serif;
+    color: #2f2a27;
+    margin: 0;
+    padding: 20px;
+}
+
+.paper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 250, 240, 0.96);
+    padding: 50px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ===== HEADINGS ===== */
 .site-title {
     font-size: 42px;
     font-family: "Cormorant Garamond", serif;
     text-align: center;
     letter-spacing: 0.12em;
     color: #3a2f2a;
-    margin-top: 60px;
+    margin-top: 0;
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
 }
-body {
-  background-color: #e9dfc8;
-  font-family: "Cormorant Garamond", serif;
-  color: #2f2a27;
-  margin: 0;
-}
-.divider {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;           /* responsive: 80% of container width */
-    max-width: 300px;     /* optional: prevents it from getting too large */
-    height: auto;         /* maintains aspect ratio */
-}
 
-.image1{
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;           /* responsive: 80% of container width */
-    max-width: 100px;     /* optional: prevents it from getting too large */
-    height: auto;         /* maintains aspect ratio */ 
-}
-.paper {
-    max-width: 800px;
-    margin: 60px auto;
-    background: rgba(255, 250, 240, 0.96);
-    padding: 50px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-    border-radius: 6px;
-    position: relative;
-    border: 1px solid rgba(0,0,0,0.05);
-}
-.intro {
-  text-align: center;
-  font-style: italic;
-  opacity: 0.8;
-  margin-bottom: 40px;
-}
 .intro-stone {
     text-align: center;
     font-style: italic;
     opacity: 0.8;
     font-size: 28px;
-   
+    margin: 10px 0 20px 0;
 }
 
-.footer {
-    text-align: center;
-    font-size: 14px;
-    opacity: 0.7;
-    margin-top: 40px;
-    font-style: italic;
-} 
-.home-link {
-    display: inline-block;
-    margin-top: 30px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #3a2f2a;
-    border-bottom: 1px solid #c9bba7;
-    transition: 0.3s ease;
-}
-.photo-container {
-    text-align: center;
-}
-
-.photo-container figcaption {
-    font-size: 0.8em;
-    color: #666;
-    font-style: italic;
-    margin-top: 5px;
-}
-.home-link:hover {
-    transform: translateX(-5px);
-    color: #000;
-}
-.poem {
-    max-width: 650px;
-    margin: 40px auto;
-    font-size: 18px;
-    line-height: 1.8;
-    font-family: "Cormorant Garamond", serif;
-    text-align: center;
-}
-.section-title {
-    margin-top: 30px;
-    font-size: 22px;
-    border-bottom: 1px solid #c9bba7;
-    padding-bottom: 5px;
-}
-
-.poem-image {
+/* ===== IMAGES ===== */
+.image1 {
     display: block;
     margin: 0 auto;
+    width: 50%;
+    max-width: 100px;
+    height: auto;
 }
-.poem-link {
+
+.divider {
     display: block;
-    padding: 12px 0;
-    font-size: 20px;
-    text-decoration: none;
-    color: #3a2f2a;
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
 }
 
-.poem-link:hover {
-    transform: translateX(8px);
-    color: #000;
-}
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* ==========================================
-   NEW: MUSIC PLAYER STYLES
-   ========================================== */
-
-
-/* Wrapper to center everything */
+/* ===== MUSIC PLAYER ===== */
 .music-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
-    margin: 10px 0 5px 0;
+    margin: 15px 0 10px 0;
 }
 
-/* Music Player Container - Centered */
 .music-container {
-    
-    margin: 15px 0 15px auto !important;
-                /* ← Right align with auto left margin */
-    max-width: 320px;
-    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 18px;
+    max-width: 350px;
+    width: 100%;
     background: rgba(255, 250, 240, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 50px;
-    border: 1px solid rgba(201, 187, 167, 0.3);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-        }
-
+    border: 2px solid #c9bba7;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
 
 .music-container:hover {
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
     background: rgba(255, 250, 240, 0.95);
-    border-color: rgba(201, 187, 167, 0.5);
+    border-color: #b5a48c;
 }
 
-/* Audio Element */
 .music-container audio {
     width: 100%;
-    height: 32px;
+    height: 36px;
     outline: none;
     border-radius: 30px;
     background: transparent;
@@ -179,8 +110,6 @@ body {
     border-radius: 50%;
     color: white;
     transition: background-color 0.3s ease;
-    width: 24px;
-    height: 24px;
 }
 
 .music-container audio::-webkit-media-controls-play-button:hover {
@@ -191,41 +120,23 @@ body {
     background-color: #c9bba7;
     border-radius: 10px;
     padding: 0 4px;
-    width: 50px;
 }
 
 .music-container audio::-webkit-media-controls-timeline {
     background-color: #d4c8b8;
     border-radius: 10px;
-    height: 3px;
 }
 
-.music-container audio::-webkit-media-controls-current-time-display,
-.music-container audio::-webkit-media-controls-time-remaining-display {
-    color: #5a4f45;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 10px;
-}
-
-/* Firefox - Custom Styling */
-.music-container audio::-moz-range-track {
-    background-color: #d4c8b8;
-    border-radius: 10px;
-    height: 3px;
-}
-
-.music-container audio::-moz-range-thumb {
-    background-color: #8b7a6a;
-    border: none;
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
-}
-
-/* Music Credit Text - Centered */
+/* Credit Text */
 .credit-text {
-    text-align: right !important;
-    margin-right: 5px !important;
+    text-align: center;
+    font-size: 12px;
+    color: #8b7a6a;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 5px 0 0 0;
+    opacity: 0.8;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .credit-text:hover {
@@ -244,15 +155,93 @@ body {
     border-bottom-color: #8b7a6a;
 }
 
-/* Mobile Responsive */
+/* ===== PHOTO ===== */
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+.poem-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8ddd2;
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-container figcaption {
+    font-size: 10px;
+    color: #b5a699;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+/* ===== POEM ===== */
+.poem {
+    max-width: 650px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+}
+
+.poem p {
+    margin-bottom: 18px;
+}
+
+/* ===== HOME LINK ===== */
+.home-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3a2f2a;
+    border-bottom: 1px solid #c9bba7;
+    transition: 0.3s ease;
+}
+
+.home-link:hover {
+    transform: translateX(-5px);
+    color: #000;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
+    .paper {
+        padding: 30px 20px;
+    }
+
+    .site-title {
+        font-size: 28px;
+    }
+
+    .intro-stone {
+        font-size: 20px;
+    }
+
+    .poem {
+        font-size: 16px;
+    }
+
     .music-container {
-        padding: 6px 12px;
+        padding: 8px 14px;
         max-width: 280px;
     }
 
     .music-container audio {
-        height: 28px;
+        height: 32px;
     }
 
     .credit-text {
@@ -261,16 +250,28 @@ body {
 }
 
 @media (max-width: 400px) {
+    .paper {
+        padding: 20px 12px;
+    }
+
+    .site-title {
+        font-size: 22px;
+    }
+
+    .intro-stone {
+        font-size: 17px;
+    }
+
+    .poem {
+        font-size: 14px;
+    }
+
     .music-container {
-        padding: 5px 10px;
-        max-width: 240px;
+        padding: 6px 10px;
+        max-width: 220px;
     }
 
     .music-container audio {
-        height: 24px;
-    }
-
-    .credit-text {
-        font-size: 9px;
+        height: 28px;
     }
 }
