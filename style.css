@@ -1,65 +1,129 @@
-/* ===== BASE STYLES ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    background-color: #e9dfc8;
-    font-family: "Cormorant Garamond", serif;
-    color: #2f2a27;
-    margin: 0;
-    padding: 20px;
-}
-
-.paper {
-    max-width: 800px;
-    margin: 0 auto;
-    background: rgba(255, 250, 240, 0.96);
-    padding: 50px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,0.05);
-}
-
-/* ===== HEADINGS ===== */
 .site-title {
     font-size: 42px;
     font-family: "Cormorant Garamond", serif;
     text-align: center;
     letter-spacing: 0.12em;
     color: #3a2f2a;
-    margin-top: 0;
+    margin-top: 60px;
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
 }
+body {
+  background-color: #e9dfc8;
+  font-family: "Cormorant Garamond", serif;
+  color: #2f2a27;
+  margin: 0;
+}
+.divider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;           /* responsive: 80% of container width */
+    max-width: 300px;     /* optional: prevents it from getting too large */
+    height: auto;         /* maintains aspect ratio */
+}
+.photo-container {
+    text-align: center;
+}
 
+.photo-container figcaption {
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+.image1{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;           /* responsive: 80% of container width */
+    max-width: 100px;     /* optional: prevents it from getting too large */
+    height: auto;         /* maintains aspect ratio */ 
+}
+.paper {
+    max-width: 800px;
+    margin: 60px auto;
+    background: rgba(255, 250, 240, 0.96);
+    padding: 50px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+.intro {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
 .intro-stone {
     text-align: center;
     font-style: italic;
     opacity: 0.8;
     font-size: 28px;
-    margin: 10px 0 20px 0;
+   
 }
 
-/* ===== IMAGES ===== */
-.image1 {
+.footer {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 40px;
+    font-style: italic;
+} 
+.home-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3a2f2a;
+    border-bottom: 1px solid #c9bba7;
+    transition: 0.3s ease;
+}
+
+.home-link:hover {
+    transform: translateX(-5px);
+    color: #000;
+}
+.poem {
+    max-width: 650px;
+    margin: 40px auto;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+}
+.section-title {
+    margin-top: 30px;
+    font-size: 22px;
+    border-bottom: 1px solid #c9bba7;
+    padding-bottom: 5px;
+}
+
+.poem-image {
     display: block;
     margin: 0 auto;
-    width: 50%;
-    max-width: 100px;
-    height: auto;
 }
-
-.divider {
+.poem-link {
     display: block;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 300px;
-    height: auto;
+    padding: 12px 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3a2f2a;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
+.poem-link:hover {
+    transform: translateX(8px);
+    color: #000;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
 /* ===== MUSIC PLAYER ===== */
 .music-wrapper {
     display: flex;
