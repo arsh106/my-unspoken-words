@@ -488,3 +488,34 @@ a:visited {
         font-size: 10px;
     }
 }
+
+/* Center the entire music wrapper */
+.music-wrapper {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Center the audio player container */
+.music-container {
+    display: inline-block;
+    /* or use block with margin auto */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Center the audio player itself */
+audio {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Center the credit text */
+.credit-text {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+    font-style: italic;
+    margin-top: 10px;
+    color: #3a2f2a;
+}
