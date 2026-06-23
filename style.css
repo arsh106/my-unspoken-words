@@ -23,6 +23,30 @@ body {
     max-width: 300px;     /* optional: prevents it from getting too large */
     height: auto;         /* maintains aspect ratio */
 }
+
+.poem-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px 0 35px;
+    color: #3a2f2a;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    position: relative;
+}
+
+.poem-title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #c9bba7;
+    margin: 10px auto 0;
+}
+
+
+
+
 .photo-container {
     text-align: center;
 }
