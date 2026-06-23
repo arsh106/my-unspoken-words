@@ -46,18 +46,18 @@ body {
 }
 
 .author {
-    font-family: "Fairwater Script";
+    font-family: ""Great Vibes", cursive;
     font-style: italic;
     text-align: center;
     opacity: 0.7;
 }
 
 .author::before {
-    content: "~ ";
+    content: "~";
     
 }
 
-.author::aftet {
+.author::after {
     content: "~ ";
 }
 .photo-container {
