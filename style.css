@@ -54,8 +54,8 @@ body {
 
 .author::before {
     content: "~";
-    
-}
+    transform: scaleX(-1);
+    }
 
 .author::after {
     content: "~ ";
