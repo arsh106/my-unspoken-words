@@ -25,7 +25,7 @@ body {
 }
 
 .poem-title {
-    font-family: "Cormorant Garamond", serif;
+    font-family: ""Great Vibes", cursive;;
     font-size: 30px;
     text-align: center;
     margin: 25px 0 35px;
@@ -37,7 +37,7 @@ body {
 }
 
 .poem-title::after {
-    content: "";
+    content: "     ";
     display: block;
     width: 80px;
     height: 1px;
@@ -46,14 +46,19 @@ body {
 }
 
 .author {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Fairwater Script";
     font-style: italic;
     text-align: center;
     opacity: 0.7;
 }
 
 .author::before {
-    content: "— ";
+    content: "~ ";
+    
+}
+
+.author::aftet {
+    content: "~ ";
 }
 .photo-container {
     text-align: center;
