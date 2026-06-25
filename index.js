@@ -9,13 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('✅ Music player found!');
         audio.volume = 0.3;
         
-        // Try to autoplay
-        audio.play().then(function() {
-            console.log('🎵 Music is playing!');
-        }).catch(function(e) {
-            console.log('ℹ️ Click play to start music');
-        });
-
+       
         // Event listeners
         audio.addEventListener('play', function() {
             console.log('▶️ Music started playing');
