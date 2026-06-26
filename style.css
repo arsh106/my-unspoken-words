@@ -75,11 +75,17 @@ body {
     opacity: 0.6;
 }
 .poem-about-title {
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     opacity: 0.6;
     text-align: center;
+}
+.poem-context p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    opacity: 0.85;
 }
 .author::after {
     content: "~ ";
