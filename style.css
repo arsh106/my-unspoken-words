@@ -66,7 +66,7 @@ body {
     transform: scaleX(-1);
     }
 .poem-context h2 {
-    font-size: 14px 
+    font-size: 14px; 
     font-weight: 400;
     text-align: center;
     margin-bottom: 6px;
@@ -74,7 +74,13 @@ body {
     text-transform: uppercase;
     opacity: 0.6;
 }
-
+.poem-about-title {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    text-align: center;
+}
 .author::after {
     content: "~ ";
 }
@@ -573,7 +579,4 @@ audio {
     font-style: italic;
     margin-top: 10px;
     color: #3a2f2a;
-}
-* {
-    font-size: 12px !important;
 }
