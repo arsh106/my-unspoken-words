@@ -574,3 +574,6 @@ audio {
     margin-top: 10px;
     color: #3a2f2a;
 }
+* {
+    font-size: 12px !important;
+}
