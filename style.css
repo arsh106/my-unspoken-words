@@ -66,10 +66,10 @@ body {
     transform: scaleX(-1);
     }
 .poem-context h2 {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 200;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .poem-context h2 {
