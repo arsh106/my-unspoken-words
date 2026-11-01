@@ -174,7 +174,7 @@ body {
 
 .intro-quote {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 12px;
+    font-size: 12px !important;
     font-style: italic;
     line-height: 1.5;
     color: #705d52;
@@ -184,7 +184,6 @@ body {
     border-bottom: none !important;
     box-shadow: none !important;
 }
-
 .group-intro {
     text-align: center;
     max-width: 600px;
