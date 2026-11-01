@@ -597,10 +597,10 @@ audio {
 
 /* ===== POEM COLLECTIONS ===== */
 
-.poem-group{
-    margin:30px 0;
-    border-bottom:1px solid rgba(201,187,167,.5);
-    padding-bottom:10px;
+.poem-group {
+    margin: 30px 0;
+    border: none !important;
+    padding-bottom: 0;
 }
 
 .poem-group summary{
