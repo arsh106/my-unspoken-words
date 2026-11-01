@@ -180,6 +180,9 @@ body {
     color: #705d52;
     margin: 0;
     font-weight: normal;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 .group-intro {
